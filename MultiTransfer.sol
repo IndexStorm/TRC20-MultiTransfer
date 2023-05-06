@@ -24,7 +24,7 @@ contract MultiTransfer {
         address sender,
         address[] calldata recipients,
         uint256[] calldata amounts
-    ) public onlyOwner returns (bool success) {
+    ) public returns (bool success) {
         require(recipients.length == amounts.length);
         uint256 total = 0;
 
